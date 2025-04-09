@@ -14,10 +14,8 @@ wire [3:0] precio;
 wire concentracion;
 wire leche;
 wire espuma;
-wire [2:0] azucar_anadido;
-wire SELECCION_valida;
-wire preparando;
-wire listo;
+wire [2:0] nivel_azucar_out;
+
 
 maquina DUT (
     .clk(clk),
@@ -30,10 +28,7 @@ maquina DUT (
     .concentracion(concentracion),
     .leche(leche),
     .espuma(espuma),
-    .azucar_anadido(azucar_anadido),
-    .SELECCION_valida(SELECCION_valida),
-    .preparando(preparando),
-    .listo(listo)
+    .nivel_azucar_out(nivel_azucar_out)
 );
 
 tester TEST (
@@ -47,10 +42,7 @@ tester TEST (
     .concentracion(concentracion),
     .leche(leche),
     .espuma(espuma),
-    .azucar_anadido(azucar_anadido),
-    .SELECCION_valida(SELECCION_valida),
-    .preparando(preparando),
-    .listo(listo)
+    .nivel_azucar_out(nivel_azucar_out)
 );
 
 

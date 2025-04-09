@@ -1,0 +1,360 @@
+$date
+	Tue Apr  8 22:32:28 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module testbench $end
+$var wire 3 ! tipo_cafe_in [2:0] $end
+$var wire 2 " tamano_in [1:0] $end
+$var wire 1 # rst $end
+$var wire 4 $ precio [3:0] $end
+$var wire 3 % nivel_azucar_out [2:0] $end
+$var wire 3 & nivel_azucar_in [2:0] $end
+$var wire 1 ' leche $end
+$var wire 1 ( espuma $end
+$var wire 1 ) concentracion $end
+$var wire 1 * clk $end
+$var wire 1 + PAGO_RECIBIDO $end
+$scope module DUT $end
+$var wire 3 , tipo_cafe_in [2:0] $end
+$var wire 2 - tamano_in [1:0] $end
+$var wire 1 # reset $end
+$var wire 3 . nivel_azucar_in [2:0] $end
+$var wire 1 * clk $end
+$var wire 1 + PAGO_RECIBIDO $end
+$var parameter 2 / MOSTRAR_PRECIO $end
+$var parameter 2 0 PREPARAR_BEBIDA $end
+$var parameter 2 1 SELECCION $end
+$var parameter 2 2 TERMINADO $end
+$var parameter 7 3 TIMEOUT $end
+$var reg 2 4 ciclos_preparados [1:0] $end
+$var reg 1 ) concentracion $end
+$var reg 1 ( espuma $end
+$var reg 1 ' leche $end
+$var reg 2 5 next_state [1:0] $end
+$var reg 3 6 nivel_azucar [2:0] $end
+$var reg 3 7 nivel_azucar_out [2:0] $end
+$var reg 4 8 precio [3:0] $end
+$var reg 2 9 state [1:0] $end
+$var reg 2 : tamano [1:0] $end
+$var reg 7 ; timer [6:0] $end
+$var reg 3 < tipo_cafe [2:0] $end
+$upscope $end
+$scope module TEST $end
+$var wire 1 ) concentracion $end
+$var wire 1 ( espuma $end
+$var wire 1 ' leche $end
+$var wire 3 = nivel_azucar_out [2:0] $end
+$var wire 4 > precio [3:0] $end
+$var reg 1 + PAGO_RECIBIDO $end
+$var reg 1 * clk $end
+$var reg 3 ? nivel_azucar_in [2:0] $end
+$var reg 1 # reset $end
+$var reg 2 @ tamano_in [1:0] $end
+$var reg 3 A tipo_cafe_in [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1010 3
+b11 2
+b0 1
+b10 0
+b1 /
+$end
+#0
+$dumpvars
+bx A
+bx @
+bx ?
+bx >
+bx =
+bx <
+bx ;
+bx :
+bx 9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx .
+bx -
+bx ,
+x+
+x*
+x)
+x(
+x'
+bx &
+bx %
+bx $
+x#
+bx "
+bx !
+$end
+#3
+0*
+#6
+b0 4
+b0 ;
+b0 9
+b0 5
+b0 %
+b0 7
+b0 =
+0(
+0'
+0)
+b0 $
+b0 8
+b0 >
+0+
+b0 &
+b0 .
+b0 ?
+b0 "
+b0 -
+b0 @
+b0 !
+b0 ,
+b0 A
+1#
+1*
+#9
+b100 !
+b100 ,
+b100 A
+0#
+0*
+#12
+b0 6
+b0 :
+b100 <
+1*
+#15
+b1000 $
+b1000 8
+b1000 >
+0*
+b11 "
+b11 -
+b11 @
+#18
+b11 :
+1*
+#21
+0*
+b110 &
+b110 .
+b110 ?
+#24
+b1 5
+b110 6
+1*
+#27
+b1 5
+0*
+1+
+#30
+b10 5
+b1 9
+1*
+#33
+0*
+#36
+b110 %
+b110 7
+b110 =
+1)
+1'
+1(
+b1 ;
+b10 9
+1*
+#39
+0*
+#42
+b110 %
+b110 7
+b110 =
+1(
+1'
+1)
+b1 4
+b0 ;
+1*
+#45
+0*
+#48
+b11 5
+b110 %
+b110 7
+b110 =
+1(
+1'
+1)
+b10 4
+1*
+#51
+0*
+#54
+b0 5
+b0 %
+b0 7
+b0 =
+0(
+0'
+0)
+b11 4
+b11 9
+1*
+#57
+b0 5
+b0 $
+b0 8
+b0 >
+0*
+0+
+b0 &
+b0 .
+b0 ?
+b0 "
+b0 -
+b0 @
+b0 !
+b0 ,
+b0 A
+#60
+b0 6
+b0 :
+b0 <
+b0 4
+b0 9
+1*
+b10 !
+b10 ,
+b10 A
+#63
+0*
+#66
+b10 :
+b10 <
+b101 $
+b101 8
+b101 >
+1*
+b10 "
+b10 -
+b10 @
+#69
+0*
+#72
+b1 5
+b110 6
+1*
+b110 &
+b110 .
+b110 ?
+#75
+0*
+#78
+b1 9
+b10 5
+1*
+1+
+#81
+0*
+#84
+b110 %
+b110 7
+b110 =
+1'
+b1 ;
+b10 9
+1*
+#87
+0*
+#90
+b11 5
+b110 %
+b110 7
+b110 =
+1'
+b1 4
+b0 ;
+1*
+#93
+0*
+#96
+b0 5
+b0 %
+b0 7
+b0 =
+0'
+b10 4
+b11 9
+1*
+#99
+0*
+#102
+b0 6
+b0 :
+b0 <
+b0 4
+b0 9
+1*
+#105
+0*
+#108
+b0 $
+b0 8
+b0 >
+1*
+0+
+b0 &
+b0 .
+b0 ?
+b0 "
+b0 -
+b0 @
+b0 !
+b0 ,
+b0 A
+#111
+0*
+#114
+1*
+#117
+0*
+#120
+1*
+#123
+0*
+#126
+1*
+#129
+0*
+#132
+1*
+#135
+0*
+#138
+1*
+#141
+0*
+#144
+1*
+#147
+0*
+#150
+1*
+#153
+0*
+#156
+1*

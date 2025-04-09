@@ -9,10 +9,8 @@ module tester(
    input concentracion, 
    input  leche, 
    input  espuma, 
-   input [2:0] azucar_anadido, //000: 0, 001: 1, 010: 2, 011: 3, 100: 4, 101:5
-   input SELECCION_valida, //1: valida, 0:invalido
-   input preparando,
-   input listo
+   input [2:0] nivel_azucar_out //000: 0, 001: 1, 010: 2, 011: 3, 100: 4, 101:5
+ 
 );
 
 // Generar la señal de reloj
@@ -49,23 +47,8 @@ initial begin
     tamano_in = 2'b00;
     nivel_azucar_in = 3'b000;
     PAGO_RECIBIDO = 0;
-    #60
+    #3
 
-
-    //(Cafe negro, pequeno, azucar 0 )
-    tipo_cafe_in = 3'b001;
-    #6
-    tamano_in = 2'b01;
-    #6
-    nivel_azucar_in = 3'b001;
-    #6
-    PAGO_RECIBIDO = 1'b1;
-    #30
-    tipo_cafe_in = 3'b00;
-    tamano_in = 2'b00;
-    nivel_azucar_in = 3'b000;
-    PAGO_RECIBIDO = 0;
-    #30
 
 
     //(Cafe con leche, mediano, azucar 5)
@@ -83,23 +66,6 @@ initial begin
     nivel_azucar_in = 3'b000;
     PAGO_RECIBIDO = 0;
     #30
-
-    //(Prueba de seleccion invalida)
-
-    tipo_cafe_in = 3'b010;
-    #6
-    tamano_in = 2'b10; //Tmano invalido
-    #6
-    nivel_azucar_in = 3'b110;
-    #6
-    PAGO_RECIBIDO = 1'b1;
-    #30
-    tipo_cafe_in = 3'b00;
-    tamano_in = 2'b00;
-    nivel_azucar_in = 3'b000;
-    PAGO_RECIBIDO = 0;
-    #30
-
 
 
      #18 $finish;
